@@ -1,24 +1,22 @@
 // script.js
 
 // ✅ 預載所有圖片
-for (let i = 0; i <= 9; i++) {
+for (let i = 0; i <= 7; i++) {
   const img = new Image();
   img.src = `images/stage${i}.png`;
 }
 
 let stage = 0;
-const maxStage = 8;
+const maxStage = 7;
 
 const rejectTexts = [
   "不要",
+  "孩子，再給你一次機會",
   "你認真的嗎?",
   "再想一想?",
-  "不准選這個!",
-  "我會很傷心耶...",
-  "不行:(",
-  "不行:(",
-  "不行:(",
-  "不行:(",
+  "不准選這個",
+  "好! 再讓你試一次",
+  "不行!",
   ""
 ];
 
@@ -42,7 +40,7 @@ noBtn.addEventListener("click", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  image.src = "images/stage9.png"; // 成功情勒後的開心圖
+  image.src = "images/stage7.png"; // 成功情勒後的開心圖
   noBtn.style.display = "none";
   yesBtn.style.transform = "scale(1.5)";
   yesBtn.textContent = "耶～謝謝你！";
