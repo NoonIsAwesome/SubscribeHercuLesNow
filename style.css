@@ -1,0 +1,62 @@
+/* style.css */
+body {
+  background-color: #fff7f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#main-image {
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+#subtitle {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  padding: 40px 0;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  min-width: 120px;
+  max-width: 200px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+#yes-btn {
+  background-color: #ff69b4; /* 粉紅色 */
+  color: white;
+  transform: scale(1);
+  z-index: 1;
+}
+
+#no-btn {
+  background-color: #add8e6; /* 淺藍色 */
+  color: #333;
+  transform: scale(1);
+}
